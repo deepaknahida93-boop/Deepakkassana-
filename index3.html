@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechPulse News | Home</title>
+
+     <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Disable F12, Ctrl+Shift+I, Ctrl+U -->
+    <script>
+        document.onkeydown = function(e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body oncontextmenu="return false;">
+
+<header>
+    <h1>TechPulse News</h1>
+    <p><strong>Latest Technology News Platform</strong></p>
+    <img src="data:image/jpeg;base64,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" alt="tech news" width="600px" height="250px">
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="https://www.youtube.com/watch?v=W79cCY0T_as">Latest News</a></li>
+            <li><a href="https://www.instagram.com/mr.jaanmohammad1824?igsh=N2Q3bXZvZDFqMWx6">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+</header>
+
+<main>
+    <h2>Welcome to TechPulse News</h2>
+
+    <p>
+        <b>TechPulse News</b> brings you <mark>trusted</mark> and
+        <em>updated</em> technology news from around the world.
+    </p>
+
+    <p>
+        We cover topics like <u>Artificial Intelligence</u>,
+        Mobile Technology, Space Science and Cyber Security.
+    </p>
+
+    <hr>
+
+    <h3>Explore News Categories</h3>
+    <ol>
+        <li>AI News</li>
+        <li>Mobile Technology</li>
+        <li>Space & Science</li>
+        <li>Cyber Security</li>
+    </ol>
+
+    <p>
+        <a href="https://www.sammobile.com/news/samsung-slashes-200-off-the-galaxy-z-fold-7-in-the-uk/">Click here to read latest tech news</a>
+    </p>
+</main>
+
+<footer>
+    <hr>
+    <p><small>© 2026 TechPulse News</small></p>
+</footer>
+
+</body>
+</html>
